@@ -96,12 +96,14 @@ footer > .row {
 .footer-bottom > .logo {
     margin-top: 40px 0;
     height: 60px;
+    padding-top: 20px;
 }
 
 .footer-bottom > .info {
     display: flex;
     justify-content: center;
     gap: 30px;
+    padding-top: 20px;
 }
 
 .footer-bottom a {
