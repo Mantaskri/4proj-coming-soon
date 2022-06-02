@@ -74,6 +74,16 @@ section.bg-main {
 /* Main - end */
 
 /* FOOTER - start */
+
+footer.container {
+    padding-top: 0;
+}
+
+footer > .row {
+    border-bottom: 2px solid #fffa;
+    padding: 15px 0;
+}
+
 .footer-bottom {
     display: flex;
     flex-direction: column;
@@ -82,17 +92,39 @@ section.bg-main {
     font-size: 16px;
     line-height: 1.6;
 }
+
 .footer-bottom > .logo {
     margin-top: 40px 0;
     height: 60px;
 }
+
 .footer-bottom > .info {
     display: flex;
     justify-content: center;
     gap: 30px;
 }
+
 .footer-bottom a {
     color: #fff;
 }
+.info > * {
+    position: relative;
+}
 
 /* FOOTER - end */
+
+.info > *::after {
+    content: '';
+    border: 1px solid #fffa;
+    height: 20px;
+
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    transform: translateY(-50%);
+
+
+}
+.info > *:last-child::after {
+    display: none;
+}
