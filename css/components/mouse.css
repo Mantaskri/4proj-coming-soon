@@ -1,0 +1,43 @@
+* {
+    position: static;
+}
+.mouse {
+    font-size: 2px;
+    width: 10em;
+    height: 15em;
+    border: 1em solid #fff;
+    border-radius: 5em;
+    position: relative;
+}
+.mouse::before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1em;
+    height: 1.7em;
+    background-color: #fff;
+    border-radius: 0.5em;
+    animation-name: scroll;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 1s;
+}
+.mouse:hover::before {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0% {
+        top: 15%;
+    }
+    30% {
+        top: 15%;
+    }
+    100% {
+        top: 75%;
+    }
+}
