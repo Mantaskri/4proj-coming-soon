@@ -137,6 +137,25 @@ footer > .row {
 
 /* FOOTER - end */
 
+@media (max-width: 700px) {
+    .main-content {
+        flex-direction: column;
+        gap: 60px;
+    }
+    .column {
+        width: 100%;
+    }
+    .right-column {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1100px) {
+    .form > input {
+        width: calc(50% - 10px);
+    }
+}
+
 .info > *::after {
     content: '';
     border: 1px solid #fffa;
@@ -146,8 +165,6 @@ footer > .row {
     top: 50%;
     right: -15px;
     transform: translateY(-50%);
-
-
 }
 .info > *:last-child::after {
     display: none;
