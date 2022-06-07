@@ -26,5 +26,5 @@
     resize: vertical;
 }
 .form :focus-visible {
-    outline: 2px dotted red;
+    outline: none;
 }
