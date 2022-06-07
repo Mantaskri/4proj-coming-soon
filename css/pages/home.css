@@ -148,7 +148,13 @@ footer > .row {
 .info > * {
     position: relative;
 }
-
+.back-to-top {
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    text-decoration: none;
+}
 /* FOOTER - end */
 
 @media (max-width: 700px) {
